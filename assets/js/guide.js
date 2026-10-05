@@ -1,3 +1,7 @@
+/**
+ * Daten und Interaktionen des HIGHEST-Wegweisers.
+ * Alle Ziele verweisen ausschließlich auf Seiten, die in diesem Projekt existieren.
+ */
 const OFFERS = [
   {
     id: "orientierung",
@@ -16,7 +20,7 @@ const OFFERS = [
       "Passende Beratung und Angebote auswählen"
     ],
     fit: "du noch nicht weißt, welches Angebot oder welcher Verwertungsweg zu dir passt.",
-    source: "beratung.html",
+    source: "kontakt.html",
     cta: "kontakt.html"
   },
   {
@@ -36,8 +40,8 @@ const OFFERS = [
       "Fördermöglichkeiten, Schutzrechte und relevante Netzwerke"
     ],
     fit: "du forschst und eine Anwendungsperspektive, Fördermöglichkeit oder ein Transferweg noch unklar ist.",
-    source: "innovation-scouting.html",
-    cta: "innovation-scouting.html"
+    source: "kontakt.html",
+    cta: "kontakt.html"
   },
   {
     id: "ip-beratung",
@@ -56,7 +60,7 @@ const OFFERS = [
       "Verwertungsoptionen und nächste Schritte klären"
     ],
     fit: "du ein neues Forschungsergebnis, einen Algorithmus, einen Prototyp oder eine technische Lösung entwickelt hast.",
-    source: "ip-transfer.html",
+    source: "kontakt.html",
     cta: "kontakt.html"
   },
   {
@@ -76,7 +80,7 @@ const OFFERS = [
       "Finanzierungs- und Förderoptionen vorbereiten"
     ],
     fit: "du aus einer Idee oder einem Forschungsergebnis ein tragfähiges Gründungsvorhaben machen möchtest.",
-    source: "beratung.html",
+    source: "kontakt.html",
     cta: "kontakt.html"
   },
   {
@@ -96,7 +100,7 @@ const OFFERS = [
       "Konkrete nächste Schritte priorisieren"
     ],
     fit: "du eine starke Lösung hast, aber Markt, Nutzenversprechen oder Umsetzungsplan noch schärfen musst.",
-    source: "beratung.html#hibs",
+    source: "kontakt.html",
     cta: "kontakt.html"
   },
   {
@@ -116,7 +120,7 @@ const OFFERS = [
       "Antrag und Transferkapitel vorbereiten"
     ],
     fit: "du Zeit und Finanzierung für Validierung, Prototyping oder Gründung benötigst.",
-    source: "foerderung.html",
+    source: "kontakt.html",
     cta: "kontakt.html"
   },
   {
@@ -136,7 +140,7 @@ const OFFERS = [
       "Antrag mit HIGHEST vorbereiten"
     ],
     fit: "du mit einem innovativen, wissens- oder technologiebasierten Vorhaben aus dem Hochschulumfeld gründen willst.",
-    source: "foerderung.html#programme",
+    source: "kontakt.html",
     cta: "kontakt.html"
   },
   {
@@ -156,7 +160,7 @@ const OFFERS = [
       "Begleitprogramm und Austausch wahrnehmen"
     ],
     fit: "du aus einer frühen Geschäftsidee innerhalb eines strukturierten Programms ein belastbares Vorhaben entwickeln möchtest.",
-    source: "foerderung.html#programme",
+    source: "kontakt.html",
     cta: "kontakt.html"
   },
   {
@@ -176,7 +180,7 @@ const OFFERS = [
       "FabLab für kostengünstige Prototypen und Workshops"
     ],
     fit: "du Platz, Hardware oder eine Werkstatt brauchst, um deine Idee sichtbar und testbar zu machen.",
-    source: "ressourcen.html",
+    source: "kontakt.html",
     cta: "kontakt.html"
   },
   {
@@ -196,8 +200,8 @@ const OFFERS = [
       "Strategisches Denken und Marktverständnis"
     ],
     fit: "du Entrepreneurship kennenlernen oder fundierte Grundlagen für deine nächsten Entscheidungen aufbauen möchtest.",
-    source: "wissen.html",
-    cta: "ringvorlesung.html"
+    source: "events-news.html",
+    cta: "events-news.html"
   },
   {
     id: "rmu-academy",
@@ -216,8 +220,8 @@ const OFFERS = [
       "Persönliche Beratung am Standort nutzen"
     ],
     fit: "du dir Gründungswissen zeitlich flexibel und zugleich mit persönlicher Begleitung aneignen möchtest.",
-    source: "wissen.html#startup-academy",
-    cta: "wissen.html#startup-academy"
+    source: "events-news.html",
+    cta: "kontakt.html"
   },
   {
     id: "experts",
@@ -236,8 +240,8 @@ const OFFERS = [
       "Kontakte in Wirtschaft und Industrie"
     ],
     fit: "du eine konkrete fachliche, unternehmerische oder branchenspezifische Frage vertiefen möchtest.",
-    source: "highest-experts.html",
-    cta: "highest-experts.html"
+    source: "ecosystem.html",
+    cta: "kontakt.html"
   },
   {
     id: "business-development",
@@ -256,7 +260,7 @@ const OFFERS = [
       "Netzwerk und Partnerschaften erschließen"
     ],
     fit: "dein Start-up gegründet ist und du die nächsten Wachstums- oder Entwicklungsschritte vorbereitest.",
-    source: "beratung.html#spektrum",
+    source: "kontakt.html",
     cta: "kontakt.html"
   },
   {
@@ -276,8 +280,8 @@ const OFFERS = [
       "Aktuelle Förderprogramme kennenlernen"
     ],
     fit: "du als Frau deine Gründungsidee in einem unterstützenden Netzwerk entwickeln möchtest.",
-    source: "female-founders.html",
-    cta: "female-founders.html"
+    source: "kontakt.html",
+    cta: "kontakt.html"
   },
   {
     id: "company-builder",
@@ -476,7 +480,7 @@ const CATEGORIES = {
   },
   alle: {
     title: "Alle Angebote",
-    explainer: "Der vollständige Angebotsbestand dieses Prototyps – themenübergreifend gebündelt.",
+    explainer: "Alle gebündelten Angebote – themenübergreifend und direkt zugänglich.",
     topics: []
   }
 };
@@ -501,8 +505,6 @@ const stepLabel = document.querySelector("#step-label");
 const stepContext = document.querySelector("#step-context");
 const progressFill = document.querySelector("#progress-fill");
 const dialog = document.querySelector("#offer-dialog");
-const menuToggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector("#main-nav");
 
 function replaceGuide(markup) {
   const update = () => { guideLive.innerHTML = markup; };
@@ -722,19 +724,6 @@ dialog.addEventListener("click", (event) => {
   if (outside) closeDialog();
 });
 dialog.addEventListener("close", () => document.body.classList.remove("dialog-open"));
-
-menuToggle.addEventListener("click", () => {
-  const open = menuToggle.getAttribute("aria-expanded") === "true";
-  menuToggle.setAttribute("aria-expanded", String(!open));
-  menu.classList.toggle("open", !open);
-});
-
-menu.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    menu.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
-  });
-});
 
 const initialCategory = new URLSearchParams(window.location.search).get("thema");
 renderCategory(CATEGORIES[initialCategory] ? initialCategory : "beratung");

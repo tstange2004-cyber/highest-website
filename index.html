@@ -10,20 +10,20 @@
     <meta name="theme-color" content="#0d0d61" />
     <title>HIGHEST – Von der Idee zur Wirkung</title>
     <link rel="icon" type="image/svg+xml" href="assets/logo-highest.svg" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="site.js" defer></script>
-    <script src="home-startups.js" defer></script>
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/startup-archive.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#inhalt">Direkt zum Inhalt</a>
 
     <div class="alliance-bar">
       <span>Innovations- und Gründungszentrum der TU Darmstadt</span>
-      <a href="https://www.futury.eu" aria-label="HIGHEST ist Teil von Futury"><img src="assets/part-of-futury.svg" alt="Part of Futury – The Future Factory" /></a>
+      <a href="https://www.futury.eu" target="_blank" rel="noreferrer" aria-label="Website von Futury öffnen"><img src="assets/part-of-futury.svg" alt="Part of Futury – The Future Factory" /></a>
     </div>
 
     <header class="site-header">
-      <a class="brand" href="home.html" aria-label="HIGHEST Startseite">
+      <a class="brand" href="index.html" aria-label="HIGHEST Startseite">
         <img src="assets/logo-highest.svg" alt="HIGHEST" />
       </a>
 
@@ -32,12 +32,12 @@
         <span class="sr-only">Menü öffnen</span>
       </button>
 
-        <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
-        <a  class="nav-primary" href="home.html">Übersicht</a>
-        <a  href="wegweiser.html">Wegweiser</a>
-        <a  href="ecosystem.html">Ökosystem</a>
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <a class="nav-primary" href="index.html">Übersicht</a>
+        <a href="wegweiser.html">Wegweiser</a>
+        <a href="ecosystem.html">Ökosystem</a>
         <a href="company-builder.html">Company Builder</a>
-        <a  href="events-news.html">Events & News</a>
+        <a href="events-news.html">Events &amp; News</a>
       </nav>
 
       <div class="header-actions">
@@ -48,38 +48,45 @@
       </div>
     </header>
 
-  <main id="inhalt">
-    <section class="page-hero page-hero-with-image">
-  <div class="page-hero-copy">
-    <h1>Von der Idee zur Wirkung.</h1>
+    <!-- Hauptinhalt der Startseite -->
+    <main id="inhalt">
+      <section class="page-hero page-hero-with-image">
+        <div class="page-hero-copy">
+          <h1>Von der Idee zur Wirkung.</h1>
+          <p class="page-lead">
+            HIGHEST ist die zentrale Anlaufstelle der TU Darmstadt für Innovation,
+            IP, Transfer und Gründung.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action signal" href="wegweiser.html">
+              Unsere Angebote für jeden nächsten Schritt →
+            </a>
+          </div>
+        </div>
 
-    <p class="page-lead">
-      HIGHEST ist die zentrale Anlaufstelle der TU Darmstadt für Innovation,
-      IP, Transfer und Gründung.
-    </p>
+        <figure class="page-hero-media">
+          <img
+            src="assets/highest-hero.jpg"
+            alt="Ein Team arbeitet gemeinsam an einem technischen Prototyp."
+            fetchpriority="high"
+          />
+        </figure>
+      </section>
 
-    <div class="hero-actions">
-      <a class="primary-action signal" href="wegweiser.html">
-        Unsere Angebote für jeden nächsten Schritt →
-      </a>
-    </div>
-  </div>
-  
-
-  <figure class="page-hero-media">
-    <img
-      src="assets/highest-hero.jpg"
-      alt="Ein Team arbeitet gemeinsam an einem technischen Prototyp."
-      fetchpriority="high"
-    />
-  </figure>
-</section>
-<section> 
-   <div class="page-hero-with-image-copy">
-    <div class="page-facts"><div><strong>> 200</strong><span>Start-ups seit Beginn der 1990er</span></div><div><strong>85</strong><span>Ausgründungen in sechs Jahren</span></div><div><strong>10–20</strong><span>Ausgründungen pro Jahr</span></div></div>
-    <div class="page-facts"><div><strong>seit 2007</strong><span>Gründungs- und Innovationszentrum</span></div><div><strong>14</strong><span>HIGHEST-Mitarbeitende laut Datenstand</span></div><div><strong>29</strong><span>Experts laut Datenstand</span></div></div>
-  </div>
-</section>
+      <section aria-label="HIGHEST in Zahlen">
+        <div class="page-hero-with-image-copy">
+          <div class="page-facts">
+            <div><strong>&gt; 200</strong><span>Start-ups seit Beginn der 1990er</span></div>
+            <div><strong>85</strong><span>Ausgründungen in sechs Jahren</span></div>
+            <div><strong>10–20</strong><span>Ausgründungen pro Jahr</span></div>
+          </div>
+          <div class="page-facts">
+            <div><strong>seit 2007</strong><span>Gründungs- und Innovationszentrum</span></div>
+            <div><strong>14</strong><span>HIGHEST-Mitarbeitende laut Datenstand</span></div>
+            <div><strong>29</strong><span>Experts laut Datenstand</span></div>
+          </div>
+        </div>
+      </section>
 
 <section class="home-startups" id="startups" aria-labelledby="startups-title" data-startup-archive>
   <div class="home-startups-intro">
@@ -143,10 +150,12 @@
   </figure>
 </section>
 
-  </main>
-  <footer class="site-footer legal-footer">
+    </main>
+
+    <!-- Einheitlicher Footer auf allen Seiten -->
+    <footer class="site-footer legal-footer">
     <div class="legal-footer-logos">
-      <a class="legal-footer-logo legal-footer-logo--highest" href="home.html" aria-label="Zur HIGHEST Startseite"><img src="assets/logo-highest.svg" alt="HIGHEST" /></a>
+      <a class="legal-footer-logo legal-footer-logo--highest" href="index.html" aria-label="Zur HIGHEST Startseite"><img src="assets/logo-highest.svg" alt="HIGHEST" /></a>
       <span class="legal-footer-divider" aria-hidden="true"></span>
       <a class="legal-footer-logo legal-footer-logo--tu" href="https://www.tu-darmstadt.de/" target="_blank" rel="noreferrer" aria-label="Website der Technischen Universität Darmstadt öffnen"><img src="assets/logo-tu-darmstadt.svg" alt="Technische Universität Darmstadt" /></a>
     </div>
@@ -162,6 +171,6 @@
         <a href="datenschutz.html">Datenschutz</a>
       </nav>
     </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

@@ -1,3 +1,4 @@
+/** Steuert die drei Partnerschaftsoptionen per Hover, Fokus und Klick. */
 (() => {
   const navigationEntry = performance.getEntriesByType?.("navigation")[0];
   if (window.location.hash === "#wege" && navigationEntry?.type === "reload") {

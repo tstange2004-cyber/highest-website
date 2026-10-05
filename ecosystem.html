@@ -10,20 +10,21 @@
     <meta name="theme-color" content="#0d0d61" />
     <title>Ökosystem – HIGHEST</title>
     <link rel="icon" type="image/svg+xml" href="assets/logo-highest.svg" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="app.js" defer></script>
-    <script src="ecosystem-options.js" defer></script>
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/ecosystem-options.js" defer></script>
+    <script src="assets/js/ecosystem-map.js" defer></script>
   </head>
   <body class="detail-page ecosystem-page">
     <a class="skip-link" href="#main-content">Direkt zum Inhalt</a>
 
     <div class="alliance-bar">
       <span>Innovations- und Gründungszentrum der TU Darmstadt</span>
-      <a href="https://www.futury.eu" aria-label="HIGHEST ist Teil von Futury"><img src="assets/part-of-futury.svg" alt="Part of Futury – The Future Factory" /></a>
+      <a href="https://www.futury.eu" target="_blank" rel="noreferrer" aria-label="Website von Futury öffnen"><img src="assets/part-of-futury.svg" alt="Part of Futury – The Future Factory" /></a>
     </div>
 
     <header class="site-header">
-      <a class="brand" href="home.html" aria-label="HIGHEST Startseite">
+      <a class="brand" href="index.html" aria-label="HIGHEST Startseite">
         <img src="assets/logo-highest.svg" alt="HIGHEST" />
       </a>
 
@@ -33,11 +34,11 @@
       </button>
 
       <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
-        <a  href="home.html">Übersicht</a>
-        <a  href="wegweiser.html">Wegweiser</a>
+        <a href="index.html">Übersicht</a>
+        <a href="wegweiser.html">Wegweiser</a>
         <a class="nav-primary" href="ecosystem.html">Ökosystem</a>
         <a href="company-builder.html">Company Builder</a>
-        <a  href="events-news.html">Events &amp; News</a>
+        <a href="events-news.html">Events &amp; News</a>
       </nav>
 
       <div class="header-actions">
@@ -48,6 +49,7 @@
       </div>
     </header>
 
+    <!-- Netzwerkübersicht und die drei klar getrennten Beteiligungswege -->
     <main id="main-content">
        <h1 class="sr-only">HIGHEST Ökosystem</h1>
 
@@ -181,11 +183,11 @@
       </section>
     </main>
 
-    <script src="highest-oekosystem.js"></script>
 
+    <!-- Einheitlicher Footer auf allen Seiten -->
     <footer class="site-footer legal-footer">
       <div class="legal-footer-logos">
-        <a class="legal-footer-logo legal-footer-logo--highest" href="home.html" aria-label="Zur HIGHEST Startseite"><img src="assets/logo-highest.svg" alt="HIGHEST" /></a>
+        <a class="legal-footer-logo legal-footer-logo--highest" href="index.html" aria-label="Zur HIGHEST Startseite"><img src="assets/logo-highest.svg" alt="HIGHEST" /></a>
         <span class="legal-footer-divider" aria-hidden="true"></span>
         <a class="legal-footer-logo legal-footer-logo--tu" href="https://www.tu-darmstadt.de/" target="_blank" rel="noreferrer" aria-label="Website der Technischen Universität Darmstadt öffnen"><img src="assets/logo-tu-darmstadt.svg" alt="Technische Universität Darmstadt" /></a>
       </div>

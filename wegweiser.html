@@ -3,26 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="HIGHEST ist die zentrale Anlaufstelle der TU Darmstadt für Innovation, IP, Transfer und Gründung. Finde schnell den passenden nächsten Schritt."
-    />
+    <meta name="description" content="Der HIGHEST Wegweiser führt von der eigenen Ausgangslage zu passenden Angeboten für Innovation, Transfer und Gründung." />
     <meta name="theme-color" content="#0d0d61" />
-    <title>HIGHEST – Von der Idee zur Wirkung</title>
+    <title>Wegweiser – HIGHEST</title>
     <link rel="icon" type="image/svg+xml" href="assets/logo-highest.svg" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/site.js" defer></script>
+    <script src="assets/js/guide.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#wegweiser">Direkt zum Wegweiser</a>
 
     <div class="alliance-bar">
       <span>Innovations- und Gründungszentrum der TU Darmstadt</span>
-      <a href="https://www.futury.eu" aria-label="HIGHEST ist Teil von Futury"><img src="assets/part-of-futury.svg" alt="Part of Futury – The Future Factory" /></a>
+      <a href="https://www.futury.eu" target="_blank" rel="noreferrer" aria-label="Website von Futury öffnen"><img src="assets/part-of-futury.svg" alt="Part of Futury – The Future Factory" /></a>
     </div>
 
     <header class="site-header">
-      <a class="brand" href="home.html" aria-label="HIGHEST Startseite">
+      <a class="brand" href="index.html" aria-label="HIGHEST Startseite">
         <img src="assets/logo-highest.svg" alt="HIGHEST" />
       </a>
 
@@ -32,11 +30,11 @@
       </button>
 
         <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
-        <a  href="home.html">Übersicht</a>
-        <a  class="nav-primary" href="wegweiser.html">Wegweiser</a>
-        <a  href="ecosystem.html">Ökosystem</a>
+        <a href="index.html">Übersicht</a>
+        <a class="nav-primary" href="wegweiser.html">Wegweiser</a>
+        <a href="ecosystem.html">Ökosystem</a>
         <a href="company-builder.html">Company Builder</a>
-        <a  href="events-news.html">Events & News</a>
+        <a href="events-news.html">Events &amp; News</a>
       </nav>
 
       <div class="header-actions">
@@ -48,7 +46,9 @@
     </header>
 
 
+    <!-- Interaktiver Wegweiser; Inhalte und Links stehen in assets/js/guide.js. -->
     <main id="start">
+      <h1 class="sr-only">HIGHEST Wegweiser</h1>
       <section class="decision-stage decision-stage--guide-only" id="wegweiser" aria-label="Interaktiver Wegweiser">
         <div class="guide-panel">
           <div class="guide-head">
@@ -181,9 +181,10 @@
       </section>
     </main>
 
+    <!-- Einheitlicher Footer auf allen Seiten -->
     <footer class="site-footer legal-footer">
       <div class="legal-footer-logos">
-        <a class="legal-footer-logo legal-footer-logo--highest" href="home.html" aria-label="Zur HIGHEST Startseite"><img src="assets/logo-highest.svg" alt="HIGHEST" /></a>
+        <a class="legal-footer-logo legal-footer-logo--highest" href="index.html" aria-label="Zur HIGHEST Startseite"><img src="assets/logo-highest.svg" alt="HIGHEST" /></a>
         <span class="legal-footer-divider" aria-hidden="true"></span>
         <a class="legal-footer-logo legal-footer-logo--tu" href="https://www.tu-darmstadt.de/" target="_blank" rel="noreferrer" aria-label="Website der Technischen Universität Darmstadt öffnen"><img src="assets/logo-tu-darmstadt.svg" alt="Technische Universität Darmstadt" /></a>
       </div>

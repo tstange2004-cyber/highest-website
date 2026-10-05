@@ -1,10 +1,11 @@
+/** Inhalte, Filter und Dialogansicht der Seite „Events & News“. */
 const ARTICLES = [
   {
     id: "innoday-2026",
     type: "event",
     label: "Veranstaltungsformat",
-    date: "29. September 2026",
-    datetime: "2026-09-29",
+    date: "29. Oktober 2026",
+    datetime: "2026-10-29",
     title: "INNODAY26: Science. Startups. Future!",
     teaser: "Das zentrale Start-up- und Innovationsevent der TU Darmstadt bringt Forschung, Gründung und Wirtschaft zusammen.",
     lead: "Am 29. Oktober wird das darmstadtium zur Bühne für wissenschaftsbasierte Innovationen, neue Technologien und unternehmerische Ideen.",

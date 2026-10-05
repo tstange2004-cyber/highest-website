@@ -3,7 +3,7 @@
  *
  * Einbindung:
  * <highest-oekosystem></highest-oekosystem>
- * <script src="highest-oekosystem.js"></script>
+ * <script src="assets/js/ecosystem-map.js"></script>
  *
  * Partnerstand: 28.09.2026
  * Quellen: highest-darmstadt.de/de/unternehmen/kooperationen/
@@ -15,7 +15,7 @@
   if (customElements.get(elementName)) return;
 
   const partners = [
-    { id: "highest", name: "HIGHEST · TU Darmstadt", url: "home.html", x: 50, y: 50, mx: 50, my: 15, core: true, local: true, signalDelay: 1450 },
+    { id: "highest", name: "HIGHEST · TU Darmstadt", url: "index.html", x: 50, y: 50, mx: 50, my: 15, core: true, local: true, signalDelay: 1450 },
     { id: "futury", name: "FUTURY – The Future Factory", url: "https://www.futury.eu/", x: 14, y: 17, mx: 24, my: 27 },
     { id: "techquartier", name: "TechQuartier", url: "https://techquartier.com/", x: 36, y: 14, mx: 76, my: 27 },
     { id: "athene", name: "Digital Hub ATHENE Cybersecurity", url: "https://www.athene-center.de/digitalhub", x: 65, y: 14, mx: 24, my: 39 },
