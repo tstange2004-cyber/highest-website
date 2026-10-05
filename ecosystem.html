@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Das HIGHEST Ökosystem verbindet Gründungsteams und Forschende mit erfahrenen Menschen, spezialisierten Organisationen und engagierten Unternehmen."
+    />
+    <meta name="theme-color" content="#0d0d61" />
+    <title>Ökosystem – HIGHEST</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo-highest.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <script src="ecosystem-options.js" defer></script>
+  </head>
+  <body class="detail-page ecosystem-page">
+    <a class="skip-link" href="#main-content">Direkt zum Inhalt</a>
+
+    <div class="alliance-bar">
+      <span>Innovations- und Gründungszentrum der TU Darmstadt</span>
+      <a href="https://www.futury.eu" aria-label="HIGHEST ist Teil von Futury"><img src="assets/part-of-futury.svg" alt="Part of Futury – The Future Factory" /></a>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="home.html" aria-label="HIGHEST Startseite">
+        <img src="assets/logo-highest.svg" alt="HIGHEST" />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menü öffnen</span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <a  href="home.html">Übersicht</a>
+        <a  href="wegweiser.html">Wegweiser</a>
+        <a class="nav-primary" href="ecosystem.html">Ökosystem</a>
+        <a href="company-builder.html">Company Builder</a>
+        <a  href="events-news.html">Events &amp; News</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="prototype-badge">Prototyp</span>
+        <a class="contact-link" href="kontakt.html">
+          Kontakt <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main-content">
+       <h1 class="sr-only">HIGHEST Ökosystem</h1>
+
+      <highest-oekosystem id="partnernetzwerk"></highest-oekosystem>
+
+      <div class="content-stack">
+        <section class="content-section ecosystem-path-section" id="wege">
+          <div class="section-content">
+            <h2>Teil des Netzwerks werden.</h2>
+            <p>
+              Drei klar getrennte Wege führen ins HIGHEST Ökosystem: persönlich als Expert:in,
+              als Unternehmenspartner oder über den bereichsübergreifenden HIGHEST Club.
+            </p>
+
+            <div class="ecosystem-choice-system" data-ecosystem-choices>
+              <div class="ecosystem-choices" aria-label="Zugänge zum HIGHEST Ökosystem">
+                <button
+                  class="ecosystem-choice is-active"
+                  type="button"
+                  data-choice="experts"
+                  aria-controls="choice-experts"
+                  aria-expanded="true"
+                >
+                  <span class="ecosystem-choice-audience">01 · Für Personen</span>
+                  <strong>Experts</strong>
+                  <span>Personen bringen Erfahrung ein oder erhalten ein passendes Expert:innen-Matching.</span>
+                </button>
+                <button
+                  class="ecosystem-choice"
+                  type="button"
+                  data-choice="unternehmen"
+                  aria-controls="choice-unternehmen"
+                  aria-expanded="false"
+                >
+                  <span class="ecosystem-choice-audience">02 · Für Unternehmen</span>
+                  <strong>Unternehmenspartner</strong>
+                  <span>Firmen vereinbaren eine konkrete Zusammenarbeit mit HIGHEST und dem TU-Ökosystem.</span>
+                </button>
+                <button
+                  class="ecosystem-choice ecosystem-choice--club"
+                  type="button"
+                  data-choice="club"
+                  aria-controls="choice-club"
+                  aria-expanded="false"
+                >
+                  <span class="ecosystem-choice-bridge">Gemeinsame Ebene</span>
+                  <span class="ecosystem-choice-audience">03 · Für alle</span>
+                  <strong>HIGHEST Club</strong>
+                  <span>Die Community für Einzelpersonen, Start-ups, Unternehmen und Partnerorganisationen.</span>
+                </button>
+              </div>
+
+              <div class="ecosystem-choice-panels" aria-label="Informationen zum gewählten Zugang">
+                <article class="ecosystem-choice-detail" id="choice-experts" data-choice-panel="experts">
+                  <div>
+                    <p class="eyebrow dark">Für Personen</p>
+                    <h3>HIGHEST Experts</h3>
+                    <p>
+                      Mentor:innen begleiten längerfristig, Business Specialists helfen bei
+                      konkreten Fachfragen und Coaches arbeiten für einen definierten Zeitraum
+                      auf ein klares Ziel hin. HIGHEST übernimmt das passende Matching.
+                    </p>
+                    <p class="ecosystem-choice-boundary"><strong>Klare Abgrenzung:</strong> Experts ist personenbezogen. Es handelt sich weder um eine Unternehmenspartnerschaft noch um eine Club-Mitgliedschaft.</p>
+                    <ul>
+                      <li>Expertise aus Wirtschaft, Industrie und Wissenschaft</li>
+                      <li>Unterstützung für Gründungsteams und Forschende</li>
+                      <li>Mitwirken als Mentor:in, Specialist oder Coach</li>
+                    </ul>
+                  </div>
+                  <aside class="ecosystem-choice-meta">
+                    <p><strong>Kosten</strong>Mentor:innen engagieren sich pro bono. Umfang und mögliche Konditionen anderer Formate werden vorab geklärt.</p>
+                    <a href="kontakt.html">Expertise anfragen oder anbieten →</a>
+                  </aside>
+                </article>
+
+                <article class="ecosystem-choice-detail" id="choice-unternehmen" data-choice-panel="unternehmen">
+                  <div>
+                    <p class="eyebrow dark">Für Unternehmen</p>
+                    <h3>Unternehmenspartner</h3>
+                    <p>
+                      Unternehmen erhalten einen direkten Zugang zu aktuellen Innovationsprojekten,
+                      Gründungen, Talenten und wissenschaftlicher Expertise der TU Darmstadt.
+                    </p>
+                    <p class="ecosystem-choice-boundary"><strong>Klare Abgrenzung:</strong> Unternehmenspartner ist organisationsbezogen und dient einer konkreten Zusammenarbeit – unabhängig von der Club-Community.</p>
+                    <ul>
+                      <li>Kontakt zu Start-ups und Innovator:innen</li>
+                      <li>Workshops, Pilotkontakte und individuelles Start-up-Scouting</li>
+                      <li>Kooperationen, Sponsoring und Sichtbarkeit im Ökosystem</li>
+                    </ul>
+                  </div>
+                  <aside class="ecosystem-choice-meta">
+                    <p><strong>Kosten</strong>Leistungen und Konditionen richten sich nach Art und Umfang der vereinbarten Partnerschaft.</p>
+                    <a href="kontakt.html">Unternehmenspartnerschaft besprechen →</a>
+                  </aside>
+                </article>
+
+                <article class="ecosystem-choice-detail" id="choice-club" data-choice-panel="club">
+                  <div>
+                    <p class="eyebrow dark">Für alle</p>
+                    <h3>HIGHEST Club</h3>
+                    <p>
+                      Der Club bringt Menschen und Organisationen mit Gründer:innen, Forschenden
+                      und jungen Unternehmen zusammen – bei persönlichen Treffen, exklusiven
+                      Formaten und im direkten Austausch über neue Ideen.
+                    </p>
+                    <p class="ecosystem-choice-boundary"><strong>Klare Abgrenzung:</strong> Der Club ist die gemeinsame, bereichsübergreifende Community für Personen, Start-ups, Unternehmen und Organisationen.</p>
+                    <ul>
+                      <li>Club-Treffen und Zugang zur HIGHEST Community</li>
+                      <li>Früher Einblick in neue Technologien und Gründungsvorhaben</li>
+                      <li>Für Unternehmensmitglieder zusätzlich Sichtbarkeit und Lab-Zugang</li>
+                    </ul>
+                  </div>
+                  <aside class="ecosystem-choice-meta">
+                    <p><strong>Kosten</strong>Die formale Unternehmensmitgliedschaft kostet derzeit 2.500 Euro pro Jahr. Andere Zugänge richten sich nach dem jeweiligen Format.</p>
+                    <a href="kontakt.html">Club-Zugang anfragen →</a>
+                  </aside>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="closing-action detail-closing" id="orientierung">
+        <div>
+          <p class="eyebrow">Persönliche Orientierung</p>
+          <h2>Du musst das Ökosystem nicht selbst durchsuchen.</h2>
+        </div>
+        <p>Beschreibe kurz dein Vorhaben. HIGHEST findet den passenden Kontakt und übernimmt die Einordnung.</p>
+        <a class="primary-action light" href="kontakt.html">Kontakt aufnehmen →</a>
+      </section>
+    </main>
+
+    <script src="highest-oekosystem.js"></script>
+
+    <footer class="site-footer legal-footer">
+      <div class="legal-footer-logos">
+        <a class="legal-footer-logo legal-footer-logo--highest" href="home.html" aria-label="Zur HIGHEST Startseite"><img src="assets/logo-highest.svg" alt="HIGHEST" /></a>
+        <span class="legal-footer-divider" aria-hidden="true"></span>
+        <a class="legal-footer-logo legal-footer-logo--tu" href="https://www.tu-darmstadt.de/" target="_blank" rel="noreferrer" aria-label="Website der Technischen Universität Darmstadt öffnen"><img src="assets/logo-tu-darmstadt.svg" alt="Technische Universität Darmstadt" /></a>
+      </div>
+      <div class="legal-footer-actions">
+        <nav class="legal-footer-social" aria-label="HIGHEST auf Social Media">
+          <a href="https://www.instagram.com/highest_1877/" target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+          <a href="https://www.youtube.com/channel/UCZE1kLDofGotS1_865ByMdQ" target="_blank" rel="noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/showcase/gr%C3%BCndungszentrum-highest" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://www.facebook.com/highestdarmstadt" target="_blank" rel="noreferrer">Facebook <span aria-hidden="true">↗</span></a>
+        </nav>
+        <nav class="legal-footer-links" aria-label="Rechtliche Informationen">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

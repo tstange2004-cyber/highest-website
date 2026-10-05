@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="HIGHEST ist die zentrale Anlaufstelle der TU Darmstadt für Innovation, IP, Transfer und Gründung. Finde schnell den passenden nächsten Schritt."
+    />
+    <meta name="theme-color" content="#0d0d61" />
+    <title>HIGHEST – Von der Idee zur Wirkung</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo-highest.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#wegweiser">Direkt zum Wegweiser</a>
+
+    <div class="alliance-bar">
+      <span>Innovations- und Gründungszentrum der TU Darmstadt</span>
+      <a href="https://www.futury.eu" aria-label="HIGHEST ist Teil von Futury"><img src="assets/part-of-futury.svg" alt="Part of Futury – The Future Factory" /></a>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="home.html" aria-label="HIGHEST Startseite">
+        <img src="assets/logo-highest.svg" alt="HIGHEST" />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menü öffnen</span>
+      </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+        <a  href="home.html">Übersicht</a>
+        <a  class="nav-primary" href="wegweiser.html">Wegweiser</a>
+        <a  href="ecosystem.html">Ökosystem</a>
+        <a href="company-builder.html">Company Builder</a>
+        <a  href="events-news.html">Events & News</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="prototype-badge">Prototyp</span>
+        <a class="contact-link" href="kontakt.html">
+          Kontakt <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </header>
+
+
+    <main id="start">
+      <section class="decision-stage decision-stage--guide-only" id="wegweiser" aria-label="Interaktiver Wegweiser">
+        <div class="guide-panel">
+          <div class="guide-head">
+            <div class="progress-copy">
+              <span id="step-label">Schritt 1 von 2</span>
+              <span id="step-context">Deine Ausgangslage</span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+              <span id="progress-fill"></span>
+            </div>
+          </div>
+
+          <div class="guide-live" id="guide-live" aria-live="polite">
+            <div class="guide-question">
+              <p class="question-index">01</p>
+              <h2>Worum geht es bei dir?</h2>
+              <p>Wähle die Aussage, die deiner Situation am nächsten kommt.</p>
+            </div>
+
+            <div class="answer-list" role="group" aria-label="Ausgangslage auswählen">
+              <button class="answer" type="button" data-situation="orientierung">
+                <span class="answer-title">Ich orientiere mich erst</span>
+                <span class="answer-copy">Noch keine konkrete Idee oder einfach neugierig.</span>
+                <span class="answer-arrow" aria-hidden="true">→</span>
+              </button>
+              <button class="answer" type="button" data-situation="idee">
+                <span class="answer-title">Ich habe eine Idee</span>
+                <span class="answer-copy">Ich möchte sie prüfen und weiterentwickeln.</span>
+                <span class="answer-arrow" aria-hidden="true">→</span>
+              </button>
+              <button class="answer" type="button" data-situation="forschung">
+                <span class="answer-title">Ich habe ein Forschungsergebnis</span>
+                <span class="answer-copy">Ich sehe Potenzial für Anwendung oder Transfer.</span>
+                <span class="answer-arrow" aria-hidden="true">→</span>
+              </button>
+              <button class="answer" type="button" data-situation="gegruendet">
+                <span class="answer-title">Ich habe bereits gegründet</span>
+                <span class="answer-copy">Mein Team soll sich weiterentwickeln oder wachsen.</span>
+                <span class="answer-arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="guide-footer">
+            <button class="quiet-button" id="guide-back" type="button" hidden>← Zurück</button>
+            <a href="#themen">Ich weiß schon, wonach ich suche ↓</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="confidence-strip" aria-label="Merkmale der Unterstützung">
+        <div><strong>Persönlich</strong><span>Ein echter Kontakt statt Zuständigkeits-Pingpong.</span></div>
+        <div><strong>Vertraulich</strong><span>Ideen und Forschung früh und geschützt besprechen.</span></div>
+        <div><strong>Vernetzt</strong><span>Die passende Expertise aus TU und Ökosystem.</span></div>
+        <a href="kontakt.html">Direkt beraten lassen →</a>
+      </section>
+
+      <section class="offer-explorer" id="themen" aria-labelledby="topics-title">
+        <div class="section-intro">
+          <p class="eyebrow dark">Angebotsfinder · Thema wählen</p>
+          <h2 id="topics-title">Wähle ein Thema. Wir filtern sofort.</h2>
+          <p>Deine Auswahl steuert direkt die Angebotsliste in derselben Fläche.</p>
+        </div>
+
+        <div class="topic-grid" role="group" aria-label="Angebote nach Thema filtern" aria-describedby="topic-filter-status">
+          <button type="button" class="topic-tile active" data-category="beratung" aria-pressed="true" aria-controls="offer-grid">
+            <span class="topic-number">01</span>
+            <span class="topic-title">Orientierung & Beratung</span>
+            <span class="topic-copy">Klarheit, Geschäftsmodell, Gründung</span>
+          </button>
+          <button type="button" class="topic-tile" data-category="ip" aria-pressed="false" aria-controls="offer-grid">
+            <span class="topic-number">02</span>
+            <span class="topic-title">IP & Transfer</span>
+            <span class="topic-copy">Erfindung, Schutz, Verwertung</span>
+          </button>
+          <button type="button" class="topic-tile" data-category="foerderung" aria-pressed="false" aria-controls="offer-grid">
+            <span class="topic-number">03</span>
+            <span class="topic-title">Förderung & Finanzierung</span>
+            <span class="topic-copy">Programme, Passung, Antrag</span>
+          </button>
+          <button type="button" class="topic-tile" data-category="wissen" aria-pressed="false" aria-controls="offer-grid">
+            <span class="topic-number">04</span>
+            <span class="topic-title">Wissen & Räume</span>
+            <span class="topic-copy">Lernen, arbeiten, prototypen</span>
+          </button>
+          <button type="button" class="topic-tile" data-category="netzwerk" aria-pressed="false" aria-controls="offer-grid">
+            <span class="topic-number">05</span>
+            <span class="topic-title">Netzwerk & Wachstum</span>
+            <span class="topic-copy">Experts, Partner, Business Development</span>
+          </button>
+        </div>
+
+        <div class="topic-filter-status" id="topic-filter-status" aria-live="polite" aria-atomic="true">
+          <div class="filter-selection">
+            <span>Aktive Themenwahl</span>
+            <strong id="active-topic-label">Orientierung & Beratung</strong>
+          </div>
+          <div class="filter-result">
+            <strong id="offer-count">Angebote werden geladen</strong>
+            <span>Die Liste darunter ist jetzt gefiltert ↓</span>
+          </div>
+        </div>
+
+        <div class="offers-section" id="angebote" aria-labelledby="offers-title">
+          <div class="offers-heading">
+            <div>
+              <p class="eyebrow dark">Ergebnis deiner Themenwahl</p>
+              <h2 id="offers-title">Orientierung & Beratung</h2>
+            </div>
+            <p id="offers-explainer">Für alle, die Ausgangslage, Potenzial und nächsten Schritt klären möchten.</p>
+          </div>
+
+          <div class="offer-grid" id="offer-grid" aria-live="off"></div>
+          <div class="offers-footer">
+            <button class="secondary-action" type="button" id="show-all-offers">Alle Angebote anzeigen</button>
+            <a href="kontakt.html">Nicht fündig? Persönlich beraten lassen →</a>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="closing-action">
+        <div>
+          <p class="eyebrow">Noch unsicher?</p>
+          <h2>Dann ist Orientierung dein nächster Schritt.</h2>
+        </div>
+        <p>HIGHEST klärt mit dir vertraulich, was jetzt sinnvoll ist – auch wenn Gründung noch nicht feststeht.</p>
+        <button class="primary-action light" type="button" data-open-offer="orientierung">Orientierung ansehen →</button>
+      </section>
+    </main>
+
+    <footer class="site-footer legal-footer">
+      <div class="legal-footer-logos">
+        <a class="legal-footer-logo legal-footer-logo--highest" href="home.html" aria-label="Zur HIGHEST Startseite"><img src="assets/logo-highest.svg" alt="HIGHEST" /></a>
+        <span class="legal-footer-divider" aria-hidden="true"></span>
+        <a class="legal-footer-logo legal-footer-logo--tu" href="https://www.tu-darmstadt.de/" target="_blank" rel="noreferrer" aria-label="Website der Technischen Universität Darmstadt öffnen"><img src="assets/logo-tu-darmstadt.svg" alt="Technische Universität Darmstadt" /></a>
+      </div>
+      <div class="legal-footer-actions">
+        <nav class="legal-footer-social" aria-label="HIGHEST auf Social Media">
+          <a href="https://www.instagram.com/highest_1877/" target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+          <a href="https://www.youtube.com/channel/UCZE1kLDofGotS1_865ByMdQ" target="_blank" rel="noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/showcase/gr%C3%BCndungszentrum-highest" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://www.facebook.com/highestdarmstadt" target="_blank" rel="noreferrer">Facebook <span aria-hidden="true">↗</span></a>
+        </nav>
+        <nav class="legal-footer-links" aria-label="Rechtliche Informationen">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </nav>
+      </div>
+    </footer>
+
+    <dialog class="offer-dialog" id="offer-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Detailansicht schließen">×</button>
+      <div class="dialog-content">
+        <div class="dialog-topline">
+          <span class="offer-owner" id="dialog-owner"></span>
+          <span class="offer-phase" id="dialog-phase"></span>
+        </div>
+        <p class="eyebrow dark" id="dialog-topic"></p>
+        <h2 id="dialog-title"></h2>
+        <p class="dialog-lead" id="dialog-lead"></p>
+        <div class="dialog-columns">
+          <div>
+            <h3>Dabei bekommst du Unterstützung</h3>
+            <ul id="dialog-support"></ul>
+          </div>
+          <div>
+            <h3>Passt besonders, wenn …</h3>
+            <p id="dialog-fit"></p>
+            <h3>Angeboten von</h3>
+            <p id="dialog-provider"></p>
+          </div>
+        </div>
+        <div class="dialog-actions">
+          <a class="primary-action" id="dialog-cta" href="#">Angebot im Detail →</a>
+          <a class="source-link" id="dialog-source" href="#">Verwandtes Thema öffnen →</a>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
